@@ -1,0 +1,756 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+h1
+{
+	font-size: 28px;
+	padding-right: 10px;
+	padding-left:10px;
+}
+
+h2
+{
+	font-size: 24px;
+}
+
+h3
+{
+	font-size: 22px;
+}
+
+h4
+{
+	font-size: 16px;
+}
+
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+ 	color:#ffffff;
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+
+.hidden
+{
+	display: none;
+}
+
+/* Style List  */
+
+.navBar 
+{
+	display:flex;
+	flex-flow:row wrap;
+    justify-content: space-around;
+    color: #ffffff;
+    padding:5px;
+    margin-right:10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navBar a:hover, a:active 
+{ 
+	text-decoration:none;
+	background-color: #ffffff;
+	border:1px solid #cb3922;
+	color: #cb3922;
+}
+
+.navItem
+{
+	color: #ffffff;
+    margin-left: 20px; 
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    font-family: Helvetica, Times, Serif;
+}
+
+.navItem .current
+{
+	text-decoration:none;
+	background-color: #cb3922;
+	border:1px solid #cb3922;
+	color: #ffffff;
+}
+
+.atag
+{
+	display:inline-block;
+	background-color: #e8a49b;
+    border-radius: 50px;
+    padding: 10px;
+    width: 90px;
+    height:20px;
+}
+
+.mainPlaceHolder
+{
+	line-height: 20px;
+    font-size: 12px;
+    font-family: Helvetica, Times, Serif;
+    border:1px solid #908f8d;
+    border-radius: 50px;
+    padding: 10px;
+    width: 90px;
+    height:20px;
+}
+
+.proSpan
+{
+	color: #e8a49b;
+}
+
+.promoTextStyle
+{
+	color: #ffffff;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	letter-spacing: 0.4px;
+}
+
+.promobut
+{
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  width:150px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #cd0b14;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.productDesc 
+{
+	text-align: center;
+	width:292px;
+}
+
+
+.whatsNew
+{
+	margin: 0 auto;
+    text-align: center;
+    color: #e8a49b;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.proArticle
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #cd0b14;
+	margin-bottom: 5px;
+}
+
+.recipeBut
+{
+  width:100px;
+  height: 20px;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #e8a49b;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer
+{
+	display:flex;
+	flex-flow:row wrap;
+    justify-content:center;
+    list-style: none;
+    text-decoration: none;
+    padding-left:10px;
+}
+
+.footerItem
+{
+	padding-right: 20px;
+	font-size: 14px;
+}
+
+
+.mediaNav
+{
+	display:flex;
+	flex-flow:row wrap;
+    justify-content:flex-start;
+    list-style: none;
+    text-decoration: none;
+    padding-left:10px;
+}
+
+.mediaNav a:hover, a:active 
+{ 
+	text-decoration:none;
+}
+
+.copyRightText
+{
+	line-height: 45px;
+	margin-left: 10px;
+}
+
+
+
+/* ID List  */
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #cd0b14;
+	height: 30px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #cd0b14;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 200px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin: auto;
+	text-align: right; 
+	padding-left: 40px; 
+}
+
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #cd0b14;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+#promo h2
+{
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#promoImage 
+{
+	width: 607px;
+}
+
+#promoText 
+{
+	margin-left: auto;
+	width: 292px;
+	height:250px;
+	background-color: #cd0b14;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	border-bottom-right-radius: 20px; 
+	border-top-right-radius: 20px;
+}
+
+#productInfo 
+{
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	padding-bottom: 40px;
+	border-bottom: solid 1px #cd0b14;
+}
+
+
+#secondPromo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #cd0b14;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+#secondPromo h2
+{
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+#secondPromoText 
+{
+	margin-right: auto;
+	width: 292px;
+	height:250px;
+	background-color: #cd0b14;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	border-bottom-left-radius: 20px; 
+	border-top-left-radius: 20px;
+}
+
+#secondPromoImage 
+{
+	width: 607px;
+}
+
+
+#mainFooter 
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+#footerNav 
+{
+	width: 420px;
+	height:70px;
+	color:#ffffff;
+	text-align: center;
+	line-height: 45px;
+	background-color: #cd0b14;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+
+#copyRight 
+{
+	margin-left: auto;
+	width: 490px;
+	height:70px;
+	color:#ffffff;
+	line-height: 70px;
+	background-color: #cd0b14;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;	
+}
+
+
+
+
+
+/*///////////////Recipes Page////////////////*/
+
+.productDescRecipes 
+{
+	margin-top: 40px;
+	text-align: center;
+	background-color:#e8a49b;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius: 20px;
+	padding-bottom: 30px;
+	width:292px;
+}
+
+.recipeText
+{
+	width:292px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color:#cd0b14;
+}
+
+.proArticleRecipes
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	margin-bottom: 0px;
+	margin-top: 100px;
+}
+
+.proArticleRecipes2
+{
+	font-weight: lighter;
+	color: #ffffff;
+	margin-top: 50px;
+	letter-spacing: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.recipesPageBut
+{
+  width:100px;
+  height: 20px;
+  margin-top: 10px;
+  color: #e8a49b;
+  background-color: #ffffff;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.finderText
+{
+	color:#cd0b14;
+	text-align: center;
+}
+
+.selectText
+{
+	color:#cd0b14;
+	font-size: 20px;
+	font-weight: lighter;
+	margin-left: 60px;
+}
+
+.recipeSubmit
+{
+	width:70px;
+	height:50px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	color:#cd0b14;
+	margin-top: 40px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+.recipeFinder
+{
+	width:200px;
+    height:50px;
+    background-color: #ffffff;
+    margin-left: 25px;
+    margin-right: 0px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color:#cd0b14;
+    cursor: pointer;
+}
+
+.sec
+{
+	display:flex;
+	flex-direction: column;
+}
+
+
+#findRecipe
+{
+	margin: 0 auto;
+	width:920px;
+	height:250px;
+	background-color:#f8cdc4;
+	border:1px solid #cd0b14;
+	border-radius: 20px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+#finderForm
+{
+    width:800px;
+    height:150px;
+    background-color:#f6ddd3;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #868584;
+}
+
+#recipeForm
+{
+	display:flex;
+	flex-direction: row;
+	padding-top: 20px;
+}
+
+
+#productInfoRecipes
+{
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	padding-bottom: 40px;
+	border-top: solid 1px #cd0b14;
+	border-bottom: solid 1px #cd0b14;
+}
+
+
+
+/*///////////////Contact Us Page////////////////*/
+
+#contact
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #cd0b14;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+#contact h2
+{
+	padding-right: 15px;
+	padding-left: 15px;
+	letter-spacing: 0.5px;
+}
+
+#contactText 
+{
+	margin-right: auto;
+	width: 292px;
+	height:250px;
+	background-color: #cd0b14;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	border-bottom-left-radius: 20px; 
+	border-top-left-radius: 20px;
+}
+
+#contactImage 
+{
+	width: 607px;
+}
+
+.emailText
+{
+	color:#cd0b14;
+	text-align: center;
+	font-family: Bradley Hand, cursive, sans-serif;
+}
+
+.emailDesc
+{
+	padding-right: 100px;
+	padding-left:100px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.formTextNo
+{
+	color:#cd0b14;
+	font-size: 18px;
+	font-weight: lighter;
+	margin-left: 50px;
+	margin-top: 50px;
+	letter-spacing: 0.5px;
+}
+
+.formText
+{
+	color:#cd0b14;
+	font-size: 18px;
+	font-weight: lighter;
+	margin-left: 50px;
+	margin-top: 20px;
+	letter-spacing: 0.5px;
+}
+
+.formTextMessage
+{
+	color:#cd0b14;
+	font-size: 18px;
+	font-weight: lighter;
+	margin-left: 40px;
+	margin-top: 55px;
+}
+
+
+.formFlex
+{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.formInput
+{
+	width:300px;
+    height:50px;
+	margin-top: 30px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border:1px solid;
+} 
+
+.formInputNt
+{
+	width:300px;
+    height:50px;
+    margin-left: 25px;
+    border-radius: 10px;
+    border:1px solid;
+} 
+
+.genderText
+{
+	color:#cd0b14;
+	font-size: 16px;
+	font-weight: lighter;
+	margin-left: 30px;
+	margin-top: 52px;
+}
+
+.gender
+{
+	width:30px;
+	height:30px;
+	margin-top: 50px;
+    border:1px solid;
+}
+
+.border
+{
+	border-bottom: 1px solid #cd0b14;
+	padding-bottom: 10px;
+}
+
+
+#emailSection
+{
+	margin: 0 auto;
+	width:920px;
+	height:780px;
+	background-color:#f8cdc4;
+	border:1px solid #cd0b14;
+	border-radius: 20px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+#form
+{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    width:800px;
+    height:600px;
+    background-color:#f6ddd3;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #868584;
+}
+
+
+#countryFinder
+{
+	width:190px;
+    height:50px;
+    margin-left: 25px;
+    border-radius: 10px;
+    color:#cd0b14;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+#message
+{
+    border-radius: 10px;
+    margin-left: 15px;
+    border:1px solid;
+}
+
+#selectFile
+{
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+#subject
+{
+	width:625px;
+    height:50px;
+    margin-left: 15px;
+    border-radius: 10px;
+    border:1px solid;
+}
+
+#submit
+{
+	width:630px;
+	height:50px;
+	background-color: #cd0b14;
+	color: #ffffff;
+	border-radius: 10px;
+	font-size: 18px;
+	margin-left:125px;
+	margin-top:40px;
+	font-family: Bradley Hand, cursive, sans-serif;
+}
+
