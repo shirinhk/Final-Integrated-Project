@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Recipes Page</title>
+<!--<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">-->
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<section id="topBar">
+      <h1 class="hidden">Top Bar</h1>  
+    </section><!--end topBar-->
+
+	<div id="siteContainer">
+        <h1 class="hidden">Recipes Page</h1>
+
+    	<header id="mainHeader">
+        	<div id="logo">
+                <h1 class="hidden">Logo</h1>
+                <img src="images/logo.png" alt="Shirin's Kitchen Logo Picture">
+            </div><!--end logo-->
+
+            <nav id="mainNav">
+                <h1 class="hidden">Main Navigation</h1>
+                <ul class="navBar">
+                    <li class="navItem"><a class="atag" href="index.html">Home</a></li>
+                    <li class="navItem"><a class="atag current" href="recipes.html">Recipes</a></li>
+                    <li class="navItem"><a class="atag" href=".html">Keto</a></li>
+                    <li class="navItem"><a class="atag" href=".html">About Us</a></li>
+                    <li class="navItem"><a class="atag" href="contactus.html">Contact Us</a></li>
+                    
+                </ul>
+            </nav><!--end mainNav-->
+        </header><!--end mainHeader-->
+
+        
+        <section id="productInfo">
+            <h1 class="hidden">Product Images and Descriptions on Recipes Page</h1>
+            	<section class="productDescRecipes">
+                    <h1 class="hidden">Image Top Left</h1>
+                    <img src="images/recipesTopLeft.jpg" alt="food Picture">
+                    <article>
+                        <h4 class=proArticle>Fried Crispy Breaded Shrimp with Garlic Dip</h4>
+                        <p>See food lovers first choice</p>
+                        <button type="button" class="recipesPageBut">Get Recipe</button>
+                    </article>
+                </section><!--end productDesc1-->
+                <section class="productDescRecipes recipeText">
+                    <h1 class="hidden">Recipe Text</h1>
+                    <article>
+                        <h1 class="proArticleRecipes"> Discover Your New Favourite Recipes</h1>
+                        <h2 class="proArticleRecipes2"> Find Your Tasty Food and Salad Recipes for all Occasions and for All Your Loved Ones</h2>
+                        <p></p>
+                    </article>
+                </section><!--end productDesc2-->
+                <section class="productDescRecipes">
+                    <h1 class="hidden">Image Top Right</h1>
+                    <img src="images/recipesTopRight.jpg" alt="food Picture">
+                    <article>
+                        <h4 class=proArticle> Spinach Parmesan Mix With Diced Chicken</h4>
+                        <p>Best taste of tender cheesy chicken</p>
+                         <button type="button" class="recipesPageBut">Get Recipe</button>
+                    </article>
+                </section><!--end productDesc3-->      
+        </section><!--end productInfo-->
+
+
+        <section id="findRecipe">
+            <h1 class="hidden">Find your Recipe Section</h1>
+            <h2 class="finderText"> Quick Recipe Finder</h2>
+            <div id="finderForm">
+                <h1 class="hidden">Drop Down Select</h1>
+                <form action="form.php" method="post" name="dropdown" id="recipeForm">
+                    <section class="sec"> 
+                        <label class="selectText">Type of Protein</label>
+                        
+                        <select name="protein" class="recipeFinder">
+                            <option value="select">Select...</option>
+                            <option value="beef">Beef</option>
+                            <option value="chicken">Chicken</option>
+                            <option value="fish">Fish</option>
+                            <option value="shrimp">Shrimp</option>
+                            <option value="no meat">No Meat</option>
+                        </select>
+                    </section>
+
+                    <section class="sec">    
+                        <label class="selectText">Time You Have</label>
+                        
+                        <select name="protein" class="recipeFinder">
+                            <option value="select">Select...</option>
+                            <option value="15 min">15 min</option>
+                            <option value="20 min">20 min</option>
+                            <option value="30 min">30 min</option>
+                            <option value="45 min">45 min</option>
+                        </select>
+                    </section>
+
+                    <section class="sec">   
+                        <label class="selectText">Type of Carb</label>
+                        
+                        <select name="protein" class="recipeFinder">
+                            <option value="select">Select...</option>
+                            <option value="bread">Bread</option>
+                            <option value="riceo">Rice</option>
+                            <option value="pasta">Pasta</option>
+                            <option value="no meat">No Carb</option>
+                        </select>
+                    </section>
+                    <button type="submit" class="recipeSubmit">Find</button>
+                </form>
+            </div><!--end dropdown-->
+        </section><!--end find recipe-->
+
+
+        <section id="productInfoRecipes">
+            <h1 class="hidden">Product Images and Descriptions on Recipes Page</h1>
+                <section class="productDescRecipes">
+                    <h1 class="hidden">Image Bottom Left</h1>
+                    <img src="images/recipesBottomLeft.jpg" alt="food Picture">
+                    <article>
+                        <h4 class=proArticle> Fried Rainbow Trout with Rice</h4>
+                        <p>Fried fish with cooked rice mixed with vegtable </p>
+                        <button type="button" class="recipesPageBut">Get Recipe</button>
+                    </article>
+                </section><!--end productDesc1-->
+                <section class="productDescRecipes">
+                    <h1 class="hidden">Image Bottom Middle</h1>
+                    <img src="images/recipesBottomMid.jpg" alt="food Picture">
+                    <article>
+                        <h4 class=proArticle> Cherry Tomato and Cucumber Salad</h4>
+                        <p>Tasty sour and salty salad for all seasons</p>
+                         <button type="button" class="recipesPageBut">Get Recipe</button>
+                    </article>
+                </section><!--end productDesc2-->
+                <section class="productDescRecipes">
+                    <h1 class="hidden">Image Bottom Right</h1>
+                    <img src="images/recipesBottomRight.jpg" alt="food Picture">
+                    <article>
+                        <h4 class=proArticle> Alfredo Chicken</h4>
+                        <p>The best alfredo chicken sause for pasta</p>
+                         <button type="button" class="recipesPageBut">Get Recipe</button>
+                    </article>
+                </section><!--end productDesc3-->      
+        </section><!--end productInfo-->
+
+
+
+       <footer id="mainFooter">
+            <div id="footerNav">
+                <h1 class="hidden">Footer Nav</h1>
+                <ul class="footer">
+                    <li class="footerItem"><a href="index.html">Home</a></li>
+                    <li class="footerItem"><a href="Recipes.html">Recipes</a></li>
+                    <li class="footerItem"><a href="index.html">Keto</a></li>
+                    <li class="footerItem"><a href="index.html">About Us</a></li>
+                    <li class="footerItem"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div><!--end FooterNav-->
+            <div id="copyRight">
+                <h1 class="hidden">Soial Media Nav and Copy Right</h1>
+                <ul class="mediaNav">
+                    <li ><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Logo"></a></li>
+                    <li ><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram Logo"></a></li>
+                    <li ><a href="https://www.youtube.com"><img src="images/youtube.png" alt="youtube Logo"></a></li>
+                    <li ><a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin Logo"></a></li>
+                    <li ><a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter Logo"></a></li>
+                    <li> <p class="copyRightText">© 2021 Shirin Kazerooni. All rights reserved.</p></li>
+                </ul>
+                
+            </div><!--end Social media Nav and Copyright-->
+        </footer><!--end mainFooter-->
+
+    </div><!--end siteContainer-->
+
+<script src="js/main.js"></script>    
+</body>
+</html>
