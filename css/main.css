@@ -309,6 +309,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #promoImage 
 {
 	width: 607px;
+	position:relative;
 }
 
 #promoText 
