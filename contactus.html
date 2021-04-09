@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us Page</title>
+<!--<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">-->
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	<section id="topBar">
+      <h1 class="hidden">Top Bar</h1>  
+    </section><!--end topBar-->
+
+	<div id="siteContainer">
+        <h1 class="hidden">Contact Us Page</h1>
+
+    	<header id="mainHeader">
+        	<div id="logo">
+                <h1 class="hidden">Logo</h1>
+                <img src="images/logo.png" alt="Shirin's Kitchen Logo Picture">
+            </div><!--end logo-->
+
+            <nav id="mainNav">
+                <h1 class="hidden">Main Navigation</h1>
+                <ul class="navBar">
+                    <li class="navItem"><a class="atag" href="index.html">Home</a></li>
+                    <li class="navItem"><a class="atag" href="recipes.html">Recipes</a></li>
+                    <li class="navItem"><a class="atag" href=".html">Keto</a></li>
+                    <li class="navItem"><a class="atag" href=".html">About Us</a></li>
+                    <li class="navItem"><a class="atag current" href="contactus.html">Contact Us</a></li>
+                    
+                </ul>
+            </nav><!--end mainNav-->
+        </header><!--end mainHeader-->
+
+        <section id="contact">
+            <h1 class="hidden">Contact</h1>
+
+            <div id="contactText">
+                <h1 class="hidden">Contact Text div</h1>
+                <h2>Get in Touch</h2>
+                <h2 class="promoTextStyle">Please leave me comments about your favourite foods and help me introduce more delicious Recipes to You!</h2>
+            </div><!--end contactText-->
+
+            <div id="contactImage">
+                <h1 class="hidden">Contact Image</h1>
+                <img src="images/contactUsTop.jpg" alt="Food Picture">
+            </div><!--end contactImage-->
+
+        </section><!--end contact-->
+
+        <div class="border">
+            <section id="emailSection">
+                <h1 class="hidden">Email Section</h1>
+                <h2 class="emailText"> Email Shirin ...</h2>
+                <p class="emailDesc">Please use this form below to get in touch with me and make sure to give me your full email address so I may respond to you and discuss about your desired Recipes. </p>
+                <div id="form">
+                    <h1 class="hidden">Form Section</h1>
+                    <form action="form.php" method="post" name="submitForm" class="formFlex">
+                        
+                            <label for="Name" class="formTextNo"> Name:</label>
+                            <input type="text" name="name" class="formInput">
+
+                            <label for="Gender" class="formTextNo">Gender:</label>
+                            <label for="Female" class="genderText">Female</label>
+                            <input type="radio" name="female" class="gender"> 
+                            <label for="Male" class="genderText">Male</label>
+                            <input type="radio" name="male" class="gender">
+                        
+  
+                            <label for="E-mail" class="formText">E-mail:</label>
+                            <input type="text" name="email" class="formInputNt">
+
+                            <label for="Region:" class="formText">Region:</label>
+                            <select name="country" id="countryFinder">
+                                <option value="select">...</option>
+                                <option value="northamerica">North America</option>
+                                <option value="southamerica">South America</option>
+                                <option value="centralamerica">Central America</option>
+                                <option value="europe">Europe</option>
+                                <option value="fareast">Far East</option>
+                                <option value="middleeast">Middle East</option>
+                                <option value="neareast">Near East</option>
+                                <option value="southasia">Sout Asia</option>
+                                <option value="northafrica">North Africa</option>
+                                <option value="southafrica">South Africa</option>
+                                <option value="australia">Australia</option>
+                                <option value="prefer not to answer">Prefer Not to Answer</option>
+                            </select>
+
+
+                            <label for="Subject:" class="formText">Subject:</label>
+                            <input type="text" name="subject" id="subject">
+
+
+                            <label for="Message" class="formTextMessage">Message:</label>
+                            <textarea rows="10" cols="76" name="message" id="message">
+                            </textarea>
+
+                       
+                        <button type="submit" id="submit">Send Your Message</button>
+                    </form>
+                </div><!--end form section-->
+            </section><!--end email and form section-->
+        </div>
+
+        <footer id="mainFooter">
+        	<div id="footerNav">
+                <h1 class="hidden">Footer Nav</h1>
+                <ul class="footer">
+                    <li class="footerItem"><a href="index.html">Home</a></li>
+                    <li class="footerItem"><a href="Recipes.html">Recipes</a></li>
+                    <li class="footerItem"><a href="index.html">Keto</a></li>
+                    <li class="footerItem"><a href="index.html">About Us</a></li>
+                    <li class="footerItem"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div><!--end FooterNav-->
+            <div id="copyRight">
+                <h1 class="hidden">Soial Media Nav and Copy Right</h1>
+                <ul class="mediaNav">
+                    <li ><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook Logo"></a></li>
+                    <li ><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram Logo"></a></li>
+                    <li ><a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube Logo"></a></li>
+                    <li ><a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="linkedin Logo"></a></li>
+                    <li ><a href="https://www.twitter.com"><img src="images/twitter.png" alt="twitter Logo"></a></li>
+                    <li> <p class="copyRightText">© 2021 Shirin Kazerooni. All rights reserved.</p></li>
+                </ul>
+                
+            </div><!--end Social media Nav and Copyright-->
+        </footer><!--end mainFooter-->
+
+    </div><!--end siteContainer-->
+
+<script src="js/main.js"></script>    
+</body>
+</html>
